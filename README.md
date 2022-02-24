@@ -10,7 +10,6 @@ A packet capture like wireshark but in python
 **Execution**
 
 ##### Depuis n'importe où :
-\> chmod u+x NotWireshark.py
 
 \> sudo ./path/NotWireshark/NotWireshark.py
 
