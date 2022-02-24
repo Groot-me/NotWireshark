@@ -60,14 +60,14 @@ def Create_pcapfile():
 
     try:
         os.system("cd /root/NotWireshark/")
-        pcap = PCAPFile(f"/root/NotWireshark/pcap_{current_time}.pcap")
+        pcap = PCAPFile(f"/root/NotWireshark/notwireshark_{current_time}.pcap")
 
     except:
         os.mkdir("/root/NotWireshark")
         print("No, you can't open it.")
-        pcap = PCAPFile(f"/root/NotWireshark/pcap_{current_time}.pcap")
+        pcap = PCAPFile(f"/root/NotWireshark/notwireshark_{current_time}.pcap")
 
-    return pcap, f"pcap_{current_time}.pcap"
+    return pcap, f"notwireshark_{current_time}.pcap"
 
 if __name__ == '__main__':
     main()
