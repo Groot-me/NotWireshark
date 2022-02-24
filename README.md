@@ -5,7 +5,7 @@ A packet capture like wireshark but in python
 
 **Usage**
 
-\> git clone https://github.com/Groot-me/NotWireShark/ 
+\> git clone https://github.com/Groot-me/NotWireshark/ 
 
 **Execution**
 
