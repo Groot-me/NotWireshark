@@ -1,6 +1,6 @@
 # NotWireShark
 
-A packet analyzer like wireshark but in python
+A packet capture like wireshark but in python
 
 
 **Usage**
