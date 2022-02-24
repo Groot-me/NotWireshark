@@ -11,6 +11,7 @@ A packet capture like wireshark but in python
 
 ##### Depuis n'importe où :
 \> chmod u+x NotWireshark.py
+
 \> sudo ./path/NotWireshark/NotWireshark.py
 
 ##### Avec python3
