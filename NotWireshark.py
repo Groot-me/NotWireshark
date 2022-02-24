@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
+
 '''
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                      Wireshark in python
@@ -16,9 +17,9 @@ from Trame import *
 # ntohs(3) = Converts the uint16_t netshort from network byte order to host byte order.
 # AF_* = Address Family
 # PF_* Protocol family
-# AF_PACKET -> travailler sur les paquets, en prenant en compte les protocoles (TCP ou UDP)
-# SOCK_RAW -> inclure les paquets bruts, qui incluent le niveau 2
-# SOCK_DGRAM -> Les Paquets sans le niveau 2
+# AF_PACKET -> work on packets, taking into account the protocols (TCP or UDP)
+# SOCK_RAW -> include raw packages, which include level 2
+# SOCK_DGRAM -> packages without level 2
 
 def main():
     conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
@@ -26,7 +27,7 @@ def main():
 
     cpt = 1
 
-    print("Press Ctrl+C for end... ")
+    print("Press Ctrl+C to stop capturing... ")
     time.sleep(1)
 
     try:
@@ -40,7 +41,7 @@ def main():
 
     except KeyboardInterrupt:
         print(Reset)
-        print(f"{BWhite}Le fichier {name_file} à été crée ici : /root/NotWireshark/ " )
+        print(f"{BWhite}The file {name_file} was created here: /root/NotWireshark/ " )
         pcap.close()
         return 0
 
@@ -58,15 +59,15 @@ def Create_pcapfile():
     current_time = time.strftime(f"%d{month}%H:%M", t)
 
     try:
-        os.system("cd /root/NotWireshark")
-        pcap = PCAPFile(f"/root/NotWireshark/pcap_{current_time}.pcap")
+        os.system("cd /root/NotWireshark/")
+        pcap = PCAPFile(f"/root/NotWireshark/notwireshark_{current_time}.pcap")
 
     except:
         os.mkdir("/root/NotWireshark")
-        print("Non on peut pas l'ouvrir")
-        pcap = PCAPFile(f"/root/NotWireshark/pcap_{current_time}.pcap")
+        print("No, you can't open it.")
+        pcap = PCAPFile(f"/root/NotWireshark/notwireshark_{current_time}.pcap")
 
-    return pcap, f"pcap_{current_time}.pcap"
+    return pcap, f"notwireshark_{current_time}.pcap"
 
 if __name__ == '__main__':
     main()
