@@ -1,4 +1,4 @@
-# NotWireShark
+# NotWireshark
 
 A packet capture like wireshark but in python
 
