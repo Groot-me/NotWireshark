@@ -40,7 +40,7 @@ def main():
 
     except KeyboardInterrupt:
         print(Reset)
-        print(f"{BWhite}Le fichier {name_file} à été crée ici : /root/NotWireshark/" )
+        print(f"{BWhite}Le fichier {name_file} à été crée ici : /root/NotWireshark/ " )
         pcap.close()
         return 0
 
