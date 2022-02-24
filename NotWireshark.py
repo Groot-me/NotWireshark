@@ -46,17 +46,10 @@ def main():
         return 0
 
 
-def Month(month):
-
-    month_list = {"01" : "Jan", "02" : "feb", "03" : "mar", "04" : "apr" , "05" : "may", "06" : "jun", "07" : "jul", "08" : "aug", "09" : "sep" , "10" : "oct", "11" : "nov" , "12" : "dec"}
-    strmonth = month_list[month]
-    return strmonth
-
 def Create_pcapfile():
 
     t = time.localtime()
-    month = Month(time.strftime("%m", t))
-    current_time = time.strftime(f"%d{month}%H:%M", t)
+    current_time = time.strftime(f"%m-%d-20%y_%H:%M:%S", t)
 
     try:
         os.system("cd /root/NotWireshark/")
@@ -64,7 +57,6 @@ def Create_pcapfile():
 
     except:
         os.mkdir("/root/NotWireshark")
-        print("No, you can't open it.")
         pcap = PCAPFile(f"/root/NotWireshark/notwireshark_{current_time}.pcap")
 
     return pcap, f"notwireshark_{current_time}.pcap"
