@@ -7,6 +7,7 @@ Possible upgrade -> pass every function of layer2_header, layer3_header, session
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 '''
 
+import os.path
 # Just Some color :D
 # Reset
 Reset = "\033[0m"  # Text Reset
@@ -215,7 +216,8 @@ class Trame:
 
     def Protocol_Analyze(self, Port):
 
-        List = open("List_Port.txt", "r")
+        script_dir = os.path.dirname(__file__)
+        List = open(f"{script_dir}/List_Port.txt", "r")
 
         for line in List:
             index = line.index(" ")
