@@ -48,7 +48,7 @@ def main():
 def Create_pcapfile():
 
     t = time.localtime()
-    current_time = time.strftime(f"%m-%d-20%y_%H:%M:%S", t)
+    current_time = time.strftime(f"%m-%d-%Y_%H:%M:%S", t)
 
     try:
         os.system("cd /root/NotWireshark/")
