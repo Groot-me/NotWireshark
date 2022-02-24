@@ -7,6 +7,6 @@ A packet analyzer like wireshark but in python
 
 \> git clone https://github.com/Groot-me/NotWireShark/ 
 
-\> python3 NotWireshark.py
+\> sudo python3 NotWireshark.py
 
 
