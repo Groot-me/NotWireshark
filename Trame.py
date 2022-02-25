@@ -33,7 +33,6 @@ BPurple = "\033[1;35m"  # Purple
 BCyan = "\033[1;36m"  # Cyan
 BWhite = "\033[1;37m"  # White
 
-
 class Trame:
     def __init__(self, Data):
         self.IP_Source = ""
@@ -107,7 +106,6 @@ class Trame:
             Target_Ip = self.ipv4_conversion(Data[48:56])
             print(f"{White} | Target_Mac : {BGreen}",Target_MAC, end="")
             print(f"{White} | Target_Ip : {BCyan}", Target_Ip, end="")
-
 
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@ Layer3 HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def IPV4_Packet_Header(self, Data):  # Some fields are not useful, but I let them in comment for understand the ipv4 header

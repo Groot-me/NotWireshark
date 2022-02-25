@@ -63,5 +63,3 @@ def Create_pcapfile():
 
 if __name__ == '__main__':
     main()
-
-
