@@ -1,14 +1,12 @@
 # NotWireshark
 
-A packet capture like wireshark but in python, it generate a .pcap file more complete in /root/NotWireshark/ usable with Wireshark itself !
+A packet capture like tshark but in python, it generate a .pcap file more complete in /root/NotWireshark/ usable with Wireshark itself !
 
 **Usage**
 
 \> git clone https://github.com/Groot-me/NotWireshark/
 
 **Execution**
-
-##### From anywhere:
 
 \> sudo /path_to_notwireshark/NotWireshark/NotWireshark.py
 
