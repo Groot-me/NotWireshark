@@ -1,6 +1,6 @@
 # NotWireshark
 
-A packet capture like wireshark but in python
+A packet capture like wireshark but in python,it generate a .pcap file more complete in /root/NotWireshark/ usable with Wireshark itself 
 
 
 **Usage**
