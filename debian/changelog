@@ -1,0 +1,5 @@
+notwireshark (20220225) kaisen-packages; urgency=medium
+
+  * First packaging for Kaisen Linux
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 25 Feb 2022 01:07:00 +0100

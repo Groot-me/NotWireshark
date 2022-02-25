@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+if [[ -z "$2" ]]; then
+	ln -sf /usr/share/notwireshark/NotWireshark.py /usr/sbin/notwireshark
+fi
+
+#DEBHELPER#
