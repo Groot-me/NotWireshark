@@ -16,4 +16,5 @@ A packet capture like wireshark but in python
 ##### Avec python3
 \> sudo python3 NotWireshark.py
 
-
+### Credits
+Developed by https://github.com/Groot-Me

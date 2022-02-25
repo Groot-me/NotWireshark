@@ -10,7 +10,6 @@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 '''
 
-
 from struct import pack
 import time
 from Trame import *
@@ -33,4 +32,3 @@ class PCAPFile:
 
     def close(self):
         self.fp.close()
-
