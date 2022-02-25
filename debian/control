@@ -10,5 +10,5 @@ Vcs-Git: https://gitlab.com/kaisenlinux/packages/notwireshark.git
 
 Package: notwireshark
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, python3
 Description: A packet analyzer like tshark but in python
