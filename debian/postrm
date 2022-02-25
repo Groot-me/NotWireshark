@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+case $1 in
+	remove|autoremove|purge)
+		rm -f /usr/sbin/notwireshark
+		rm -rf /usr/share/notwireshark/__pycache__/
+	;;
+esac
+
+if [[ "$1" = "purge" ]]; then
+	rm -rf /root/NotWireshark/
+fi
+
+#DEBHELPER#

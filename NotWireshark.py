@@ -52,7 +52,7 @@ def Create_pcapfile():
     current_time = time.strftime(f"%m-%d-%Y_%H:%M:%S", t)
 
     try:
-        os.system("cd /root/NotWireshark/")
+        os.system("cd /root/NotWireshark/ 2> /dev/null")
         pcap = PCAPFile(f"/root/NotWireshark/notwireshark_{current_time}.pcap")
 
     except:
@@ -63,5 +63,3 @@ def Create_pcapfile():
 
 if __name__ == '__main__':
     main()
-
-

@@ -1,0 +1,14 @@
+Source: notwireshark
+Section: net
+Priority: optional
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/Groot-me/NotWireshark
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/notwireshark
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/notwireshark.git
+
+Package: notwireshark
+Architecture: all
+Depends: ${misc:Depends}, python3
+Description: A packet analyzer like tshark but in python
