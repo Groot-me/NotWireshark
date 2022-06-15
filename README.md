@@ -9,6 +9,7 @@ A packet capture like tshark but in python, it generate a .pcap file more comple
 **Create a symlink for easily execute**
 
 \> sudo ln -s $PWD/NotWireshark.py /bin/NotWireshark
+
 \> sudo NotWireshark.py
 
 ### Credits
