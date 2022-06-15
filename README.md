@@ -6,9 +6,10 @@ A packet capture like tshark but in python, it generate a .pcap file more comple
 
 \> git clone https://github.com/Groot-me/NotWireshark/
 
-**Execution**
+**Create a symlink for easily execute**
 
-\> sudo /path_to_notwireshark/NotWireshark/NotWireshark.py
+\> sudo ln -s $PWD/NotWireshark.py /bin/NotWireshark
+\> sudo NotWireshark.py
 
 ### Credits
 Developed by https://github.com/Groot-Me
